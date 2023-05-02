@@ -1,0 +1,301 @@
+<html>
+    <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">     
+    <style>
+  body{   
+       padding: 0;
+       margin: 0;
+       box-sizing: border-box;
+       background-image: linear-gradient(to right,rgba(5, 251, 210, 0.5),rgba(251, 250, 250, 0.5),rgba(22, 6, 255, 0.5));
+    }
+    ul{
+    list-style-type:none;
+    margin:0;
+    border: 5px;
+    padding:10px;
+    overflow:hidden;
+    background-color: rgb(2, 204, 255);
+}
+ul li {
+    float:left;
+}
+ul li a{ 
+    display:block;
+    color:rgb(248, 2, 2);
+    text-align: center;
+    padding:15px;
+    font-size:30px;
+    font-family: serif;
+    text-decoration: none;
+    border-bottom: green;
+    border: 3px solid  rgb(2, 204, 255);
+    
+        
+}
+li a:hover{
+    border: 3px solid  rgb(245, 241, 7);
+    color: #000;
+    background-color: rgb(2, 204, 255);
+}
+.right li{
+    float: right;
+    background-color: none;
+    margin-right: 20px;
+}
+h1{
+  text-align: left;
+  text-align: center;
+  font-size: 35px;
+  color:rgb(136, 250, 6);
+}
+h1 span{
+  padding:10px;
+  color: rgb(8, 248, 228);
+  border-radius: 5px;
+}
+.mySlides {
+  display: none
+}
+img {
+  vertical-align: middle;
+  height:600px;
+}
+.slideshow-container {
+  max-width:400px;
+  position: relative;
+  margin: auto;
+}
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;   
+  padding: 16px;
+  margin-top: -22px;
+  color:violet;
+  font-weight: bold;
+  font-size: 30px;
+  transition: 0.3s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+.text {
+  color: rgb(5, 5, 5);
+  font-size: 30px;
+  overflow: hidden;
+  text-align: left;
+  text-align: center;
+}
+.numbertext {
+  color: #080808;
+  font-size:30px;
+  padding: 8px 12px;
+  text-align:center;
+  bottom: 8px;
+  color:yellow;
+  position: absolute;
+  top: 0;
+}
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+.active, .dot:hover {
+  background-color: #717171;
+}
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+@-webkit-keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+@media only screen and (max-width: 300px) {
+  .prev, .next,.text {font-size: 11px}
+}
+.overlay {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: rgba(255, 255, 255, 0.3);
+  overflow: hidden;
+  width: 100%;
+  height: 0;
+  transition: 1.5s ease;
+}
+.slideshow-container:hover .overlay {
+  height: 20%;
+}
+.overlay a {
+  display: block;
+  text-decoration: none;
+  font-size: 30px;
+  color:red;
+  text-align:center;
+  padding: 5px;
+  background-color: darkcyan;
+  margin-left: 150px;
+  margin-right:150px;
+  border-radius: 50px;
+}
+.overlay a:hover{
+  background-color: wheat;
+  color: #000;
+}
+@media(max-width:500px){
+    ul{
+        list-style-type:none;
+        margin:0;
+        border:4px;
+        padding:5px;
+        overflow:hidden;
+        background-color: rgb(2, 204, 255);
+        
+        } 
+        ul li {
+        float:left;
+        }
+        ul li a{ 
+        display:block;
+        color:rgb(248, 2, 2);
+        text-align: center;
+        padding:1px;
+        font-size:13.5px;
+        font-family: serif;
+        text-decoration: none;
+        border-bottom: green;
+        border: 1px solid  rgb(2, 204, 255);
+        }
+         li a:hover{
+        border: 1px solid  rgb(245, 241, 7);
+        color: #000;
+        background-color: rgb(2, 204, 255);
+        }
+        .right li{
+        float: right;
+        background-color: none;
+        margin-right: 4px;
+        }
+
+
+
+      }
+</style>
+</head>
+<body>
+    </style>
+    </head>
+    <body>
+      <div class="hero-image">
+        <ul>
+            <li><a href="bird html.html"><i class="fa fa-home" style="color:white;" aria-hidden="true"></i> Home</a></li>
+            <li><a href="indianbird.html"><i class="fa fa-camera" style="color:white;" aria-hidden="true"></i> My Images</a></li>
+            <li><a href="form.html"><i class="fa fa-user-circle-o" style="color:white;" aria-hidden="true"></i> Login</a></li>
+            <li><a href="map.html"><i class="fa fa-map" style="color:white;" aria-hidden="true"></i> Bird Sanctuaries</a></li>
+            <div class="right">
+              <li><a href="https://www.facebook.com/govind.m.180072"><i class="fa fa-facebook" style="color: blue;" aria-hidden="true"></i></a></li>
+              <li><a href="https://www.instagram.com/g_j_mobile_photography/"><i class="fa fa-instagram" style="color: red;" aria-hidden="true"></i></a></li>
+            <li><a href="https://www.youtube.com/results?search_query=sony+bbc+earth+birds"><i class="fa fa-youtube" style="color: red;" aria-hidden="true"></i></a></li>
+    </div> 
+        </ul>
+    </div>
+    <h1>Bird Sanctuaries of <br><span>Tamil Nadu</span></h1>
+    
+<div class="slideshow-container">
+
+  <div class="mySlides fade">
+    <div class="numbertext">1 /5</div>
+    <img src="IMG_20220422_173441.jpg" style="width:100%">
+    <div class="overlay">
+    <div class="text">Vedanthangal<br>Bird Sanctuary </div>
+    <a href="https://goo.gl/maps/dMHPqxE22HU1TPT4A">visit</a>
+  </div>
+  </div>
+  <div class="mySlides fade">
+    <div class="numbertext">2/ 5</div>
+    <img src="IMG_20220422_173428.jpg" style="width:100%">
+    <div class="overlay">
+    <div class="text">Kodiyakarair<br>Bird Sanctuary</div>
+    <a href="https://goo.gl/maps/2MtEt39ycz9arY3x5">visit</a>
+    </div>
+  </div>
+  <div class="mySlides fade">
+    <div class="numbertext">3 / 5</div>
+    <img src="IMG_20220422_173408.jpg" style="width:100%">
+    <div class="overlay">
+    <div class="text">Peakok<br>Bird Sanctuary</div>
+    <a href="https://goo.gl/maps/hDc2U2ZweD9W6yaS7">visit</a>
+  </div>
+  </div>
+  <div class="mySlides fade">
+    <div class="numbertext">4/5</div>
+    <img src="IMG_20220424_082532.jpg" style="width:100%">
+    <div class="overlay">
+    <div class="text">Vaduvoor<br>Bird Sanctuary</div>
+    <a href="https://goo.gl/maps/CpNSbsLGrwFCPBuo9">visit</a>
+  </div>
+  </div>
+  <div class="mySlides fade">
+    <div class="numbertext">5/5</div>
+    <img src="IMG_20220424_085930.jpg" style="width:100%">
+    <div class="overlay">
+    <div class="text">Karaivetti<br>Bird Sanctuary</div>
+    <a href="https://goo.gl/maps/9jDdUCgSQqsY6gH46">visit</a>
+  </div>
+  </div>
+  <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+  <a class="next" onclick="plusSlides(1)">&#10095;</a>
+  </div>
+  <script>
+  var slideIndex = 1;
+  showSlides(slideIndex);
+  
+  function plusSlides(n) {
+    showSlides(slideIndex += n);
+  }
+  
+  function currentSlide(n) {
+    showSlides(slideIndex = n);
+  }
+  
+  function showSlides(n) {
+    var i;
+    var slides = document.getElementsByClassName("mySlides");
+    var dots = document.getElementsByClassName("dot");
+    if (n > slides.length) {slideIndex = 1}    
+    if (n < 1) {slideIndex = slides.length}
+    for (i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none";  
+    }
+    for (i = 0; i < dots.length; i++) {
+        dots[i].className = dots[i].className.replace(" active", "");
+    }
+    slides[slideIndex-1].style.display = "block";  
+    dots[slideIndex-1].className += " active";
+  }
+  </script>
+    </body>
+</html>   

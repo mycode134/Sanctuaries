@@ -1,0 +1,163 @@
+
+        *{   
+          padding: 0;
+          margin: 0;
+          box-sizing: border-box; 
+       }
+       body{
+         background-image: url('seagulls-lake-flying-birds-seabirds-swans-morning-sun-sun-5120x3413-7202.jpg');
+         background-position: center;
+         background-size: cover;
+       }
+       ul{
+list-style-type:none;
+margin:0;
+border: 5px;
+padding:10px;
+overflow:hidden;
+background-color: rgb(2, 204, 255);
+
+} 
+ul li {
+float:left;
+}
+ul li a{ 
+display:block;
+color:rgb(248, 2, 2);
+text-align: center;
+padding:15px;
+font-size:30px;
+font-family: serif;
+text-decoration: none;
+border-bottom: green;
+border: 3px solid  rgb(2, 204, 255);
+}
+ li a:hover{
+border: 3px solid  rgb(245, 241, 7);
+color: #000;
+background-color: rgb(2, 204, 255);
+}
+.right li{
+float: right;
+background-color: none;
+margin-right: 20px;
+}
+.text-box{
+    width: 90%;
+    color:rgb(5, 5, 5);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    padding: 10px;
+    margin: 0;
+    border-radius: 50px;
+    transform: translate(-50%,-50%);
+    text-align: center;
+    transition: .5s ease;
+    background-color: rgba(0,0,0,0.5);
+}
+.text-box h1{
+    font-size: 62px;
+    color: yellow;
+}
+.text-box p{
+    margin: 10px;
+    font-size: 30px;
+    color: rgb(74, 235, 11);
+}
+.button{
+        display: inline-block;
+        text-decoration: none;
+        color: rgb(248, 237, 237);
+        border: 1px solid rgb(243, 243, 248);
+        padding: 12px 34px;
+        font-size: 30px;
+        border-radius: 50px 50px;
+        background: transparent;
+        position: relative;
+        cursor: pointer;
+}
+.button:hover{
+       border: 1px solid #030303;
+       background-image: linear-gradient(to bottom right,rgb(15, 203, 228),rgb(255, 0, 200),rgb(81, 255, 0));
+       transition: 1s;
+       color: black;
+}
+@media(max-width:500px){
+    ul{
+        list-style-type:none;
+        margin:0;
+        border:4px;
+        padding:5px;
+        overflow:hidden;
+        background-color: rgb(2, 204, 255);
+        
+        } 
+        ul li {
+        float:left;
+        }
+        ul li a{ 
+        display:block;
+        color:rgb(248, 2, 2);
+        text-align: center;
+        padding:1px;
+        font-size:13.5px;
+        font-family: serif;
+        text-decoration: none;
+        border-bottom: green;
+        border: 1px solid  rgb(2, 204, 255);
+        }
+         li a:hover{
+        border: 1px solid  rgb(245, 241, 7);
+        color: #000;
+        background-color: rgb(2, 204, 255);
+        }
+        .right li{
+        float: right;
+        background-color: none;
+        margin-right: 4px;
+        }
+        
+        .text-box{
+            width: 90%;
+            color:rgb(5, 5, 5);
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            padding: 25px;
+            margin: 0;
+            border-radius: 50px;
+            transform: translate(-50%,-50%);
+            text-align: center;
+            transition: .5s ease;
+            background-color:none;
+        }
+        .text-box h1{
+            font-size:23px;
+            color: yellow;
+        }
+        .text-box p{
+            margin: 2px;
+            font-size: 20px;
+            color: rgb(74, 235, 11);
+        }
+        .button{
+                display: inline-block;
+                text-decoration: none;
+                color: rgb(248, 237, 237);
+                border: 1px solid rgb(243, 243, 248);
+                padding: 1px 3px;
+                font-size:20px;
+                border-radius: 5px 5px;
+                background: transparent;
+                position: relative;
+                cursor: pointer;
+        }
+        .button:hover{
+               border: 1px solid #030303;
+               background-image: linear-gradient(to bottom right,rgb(15, 203, 228),rgb(255, 0, 200),rgb(81, 255, 0));
+               transition: 1s;
+               color: black;
+        }
+        
+}
